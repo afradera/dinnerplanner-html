@@ -109,6 +109,10 @@ class DinnerModel {
           found = true;
         }
       }
+       
+        if (type == "") {
+            return found; 
+        }
         
       return dish.type === type && found;
     });
